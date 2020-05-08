@@ -1,7 +1,46 @@
 body {
-  font-family: Helvetica;
+  color: black;
+  background-color: white;
 }
+
 .app {
   margin-top: 20px;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  .cities {
+    width: 25%;
+    margin-bottom: 20px;
+  }
+  .active-city {
+    width: 70%;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    h3 {
+      margin-top: 0;
+    }
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  }
+}
+
+
+
+.list-group-item {
+  background-color: transparent;
+  cursor: pointer;
+  color: black;
+  &:hover{
+    background-color: #9fbec1 ;
+  }
+
+}
+
+ .selected {
+  background-color: #b39ed9;
 }
